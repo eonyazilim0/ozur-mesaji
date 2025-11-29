@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Özür Dilerim Aşkım❤️</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #ffe6eb, #f5f5f5);
+    }
+
+    .card {
+      background: white;
+      padding: 32px 28px;
+      border-radius: 24px;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heart {
+      font-size: 48px;
+      animation: pulse 1.3s infinite;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #444;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.2s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff4b6e, #ff7b9c);
+      color: white;
+      box-shadow: 0 8px 18px rgba(255, 75, 110, 0.45);
+    }
+
+    .btn-secondary {
+      background: #f1f1f1;
+      color: #444;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .code-box {
+      font-family: "Fira Code", monospace;
+      font-size: 12px;
+      text-align: left;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 10px 12px;
+      border-radius: 12px;
+      margin-top: 14px;
+      border: 1px solid #1e293b;
+      overflow-x: auto;
+    }
+
+    .code-comment { color: #6b7280; }
+    .code-keyword { color: #7dd3fc; }
+    .code-string { color: #f9a8d4; }
+    .code-prop   { color: #a5b4fc; }
+
+    .tag {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(255, 75, 110, 0.06);
+      color: #ff4b6e;
+      border: 1px solid rgba(255, 75, 110, 0.16);
+    }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Burayı istersen kendi isimlerinle değiştirebilirsin -->
+    <div class="tag">from: <strong>ben</strong> to: <strong>aşkım</strong></div>
+
+    <div class="heart">❤️</div>
+    <h1>Özür Dilerim</h1>
+    <h2>Bu yazılımcının üzdüğü ve cok kırdığı biricik PRENSESİNE</h2>
+
+    <p id="message">
+      Herşey için cok ama cok özürdilerim.
+      Keşke söylediklerimi burdaki satırlar gibi değiştirebilsem.
+      
+      Ama kendimi affettirmek için herşeyi yapacağım
+      sen benim için her şeyden daha değerlisin.
+      
+      Bu küçük sayfayı da sadece bir şeyleri
+      telafi etmeye başlamak için hazırladım...
+    </p>
+
+    <div class="btn-row">
+      <button class="btn-secondary" onclick="showDetails()">
+        Kalbimi Oku 💌
+      </button>
+      <button class="btn-primary" onclick="forgive()">
+        Beni Affet misin? 🥺
+      </button>
+    </div>
+
+    <div class="code-box" id="code">
+      <span class="code-comment">// pseudo-code: how my heart works</span><br/>
+      <span class="code-keyword">const</span> myHeart = &#123;<br/>
+      &nbsp;&nbsp;<span class="code-prop">owner</span>: <span class="code-string">"sen"</span>,<br/>
+      &nbsp;&nbsp;<span class="code-prop">status</span>: <span class="code-string">"üzgün"</span>,<br/>
+      &nbsp;&nbsp;<span class="code-prop">bug</span>: <span class="code-string">"seni kırdım"</span>,<br/>
+      &nbsp;&nbsp;<span class="code-prop">fix</span>: () =&gt; <span class="code-string">"özür + sarılma + daha çok sevgi"</span><br/>
+      &#125;;<br/><br/>
+      <span class="code-keyword">if</span> (you.forgive(me)) &#123;<br/>
+      &nbsp;&nbsp;myHeart.status = <span class="code-string">"dünyanın en mutlu kalbi"</span>;<br/>
+      &#125; <span class="code-keyword">else</span> &#123;<br/>
+      &nbsp;&nbsp;myHeart.retry(<span class="code-string">"seni hak ettiğin gibi mutlu etmek"</span>);<br/>
+      &#125;
+    </div>
+  </div>
+
+  <script>
+    function forgive() {
+      alert(
+        "Yaptığım bütün mallıklar için özür dilerim senden aşkım. " +
+        "Seni her şeyden çok seviyorum. " +
+        "Böyle bir şey denemek istedim, belki bir umut affetmene yardımcı olur. ❤️"
+      );
+    }
+
+    function showDetails() {
+      const msg = document.getElementById("message");
+      msg.innerHTML =
+        "Aşkım,\n\n" +
+        "Söylediğim herşey için cok pişmanım yaptıklarım cok salakcaydı " +
+        "bunun farkındayım. Yaptığım bütün mallıklar için " +
+        "gerçekten çok üzgünüm.\n\n" +
+        "Seni her şeyden çok seviyorum ve bunu telafi etmek için " +
+        "ne gerekiyorsa yapmaya hazırım. Belki bu küçük sayfa hiçbir şeyi " +
+        "tam olarak onarmaya yetmez ama en azından kalbimden geçenleri " +
+        "gör diye böyle bir şey denedim.\n\n" +
+        "Belki bir umut, affetmene küçük de olsa yardımcı olur... 💗";
+    }
+  </script>
+</body>
+</html>
+
